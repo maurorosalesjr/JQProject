@@ -14,8 +14,22 @@
 //});
 
 $(document).ready(function() {
-  $("p").click(function() {
-    $(".walrus-showing").toggle();
-    $(".walrus-hidden").toggle();
+  $(".clickable").click(function() {
+    $("#walrus-showing").slideToggle();
+    $("#walrus-hidden").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $(".clickable2").click(function() {
+    $("#walrus-showing").slideToggle();
+    $("#walrus-hidden").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $(".clickhere").click(function() {
+    $("#ghost-showing").fadeToggle();
+    $("#ghost-hidden").fadeOut();
   });
 });
